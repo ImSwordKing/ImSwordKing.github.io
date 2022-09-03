@@ -62,6 +62,11 @@
     font-size: 24px;
 }
 
+.upsellDescription-2QpuiS{
+    font-size: 0px;
+    display:none;
+}
+
 /* Hide nitro icon on banners */
 .bannerPremium-2hSAwz .premiumIconWrapper-1A-UH5 {
   display: none;
