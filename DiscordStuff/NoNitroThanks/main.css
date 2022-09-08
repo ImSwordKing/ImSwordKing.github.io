@@ -54,15 +54,15 @@
 
 
 /* Removes nitro promotion on custom stickers */
-.emptyState-Ud44C9 .header-24Iqpn{
+.emptyState-Ud44C9 .header-24Iqpn {
     font-size: 0px;
 }
-.emptyState-Ud44C9 .header-24Iqpn:before{
+.emptyState-Ud44C9 .header-24Iqpn:before {
     content:'Hello, You need to pay ( :( ) to use custom stickers.';
     font-size: 24px;
 }
 
-.upsellDescription-2QpuiS{
+.upsellDescription-2QpuiS {
     font-size: 0px;
     display:none;
 }
@@ -156,6 +156,12 @@
 /* Nitro popup in banners */
 .premiumIconWrapper-yyGDql,
 .premiumIcon-3WfDzD {
+    display: none;
+}
+
+/* Remove the higher resolution streams nitro banner */
+
+.upsellBanner-1tVKtW {
     display: none;
 }
 
