@@ -129,21 +129,12 @@
 .themed-2.premiumTab-39eQzY,
 .themed-2-lozF.item-3XjbnG.premiumTab-39eQzY,
 .card-16VQ8C.codeRedemptionRedirect-2hYMSQ,
-.themed-2-lozF.item-3XjbnG:nth-of-type(11),
-.themed-2-lozF.item-3XjbnG:nth-of-type(13),
-.themed-2-lozF.item-3XjbnG:nth-of-type(12) {
+.emptyStateSubtext-29V2rK {
     display: none;
 }
-
-.header-2Kx1US:nth-of-type(10),
-.themed-2-lozF.item-3XjbnG:nth-of-type(14),
-.separator-2wx7h6:nth-of-type(9) {
-    display: none;
-}
-
-/* (Experimental Features) Changes */
 
 /* Profile Skin advertisement */
+
 .profileThemeSectionPremiumBorder-pH_ioT.customizationSection-IGy2fS {display: none}
 
 /* Animated Banner advertisement */
@@ -154,6 +145,7 @@
 }
 
 /* Nitro popup in banners */
+
 .premiumIconWrapper-yyGDql,
 .premiumIcon-3WfDzD {
     display: none;
@@ -165,7 +157,7 @@
     display: none;
 }
 
-/* Revert the profile skin change (Profile skin experiment needed) by Disease#3749*/
+/* Revert the profile skin change by Disease#3749*/
 .text-md-medium-2avxhQ.defaultColor-24IHKz {
     display: none;
 }
@@ -223,28 +215,31 @@
     background-color: var(--background-secondary-alt);
 }
 
+/* Removing stuff from the settings context menu */
 
-/* Remove the comment to enable experimental features */
+#user-settings-cog-Discord_Nitro,
+#user-settings-cog-Nitro_Server_Boost,
+#user-settings-cog-Subscriptions,
+#user-settings-cog-Library_Inventory,
+#user-settings-cog-Billing {display: none}
 
-/* New Grayed out emoji tab list (Experiments) */
+/* Reimplemention of some pages to not break the server sidebar while keeping nitro ads to a minimum */
 
-/*
-
-.video-2LsgIj, 
-.modalHeaderArtwork-wWqt4O {
-    display: none;
+.guildSubscriptionHeading-3Gp8lO.wrapper-2-Da9H,
+.guildsBlurb-1ouzU-.text-md-normal-304U3g.defaultColor-24IHKz{
+    display: none
 }
 
-.contentCardDescription-2kua_z {
-font-size: 0px;
-}
-.contentCardDescription-2kua_z:before {
-    content:"This feature isn't available for free users. Sorry";
-    font-size: 20px;
-    text-align: center;
-    display:block;
-}
+/* Making sure you can't see the nitro page. */
 
-*/
+.container-LUKdw8
+ {display: none}
+
+/* Removing some new ads that appeared recently thru A/B testing. */
+
+.tier0Container-3pQqp9,
+.upsellOverlayContainer-3NMgTS,
+.upsellContainer-TwfTaF,
+.disabled-1gJPpT {display: none}
 
 /* ---> fuck you discord <--- */
