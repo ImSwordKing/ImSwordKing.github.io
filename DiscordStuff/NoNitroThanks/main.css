@@ -1,6 +1,8 @@
 /* Disable all the data tracking options in "Privacy & Safety" before using the theme. */
 /* most of the theme was made by Nyria#3863. */
 
+/* IF SOMETHING GOES WRONG PLEASE MAKE AN ISSUE HERE: https://github.com/ImSwordKing/DiscordModifiCSSations/issues */
+
 /* flower icon next to server name */
 .flowerStar-2tNFCR,
 .flowerStarContainer-1QeD-L,
@@ -159,12 +161,18 @@
     display: none;
 }
 
+/* I don't know how the server boost button reappears so i will try removing all the nitro ads on it as possible. i can't seem to get it removed reliably. */
+
+.button-f2h6uQ[aria-label="Level 1"], /* Removes Level 1 Button (Also the text as it's connected to the button)*/
+.button-f2h6uQ[aria-label="Level 2"],
+.button-f2h6uQ[aria-label="Level 3"],
+.subscribeAction-1tjck2,
+.tierMarkerLabelPlusIcon-2zLkr7 {display: none}
+
 /* Removing stuff from the settings context menu */
 
-.side-2ur1Qk[aria-label="User Settings"] > div:nth-child(n+9):nth-child(-n+13) {
-    display: none;
-}
-
+.side-2ur1Qk[aria-label="User Settings"] > div:nth-child(n+9):nth-child(-n+13), /* Removes Nitro, Subscriptions, Nitro Boost pages */
+.side-2ur1Qk[aria-label="User Settings"] > div:nth-child(n+47):nth-child(-n+47), /* Removes Payment Flow from experiments */
 [id="user-settings-cog-Discord_Nitro"],
 [id="user-settings-cog-Nitro_Server_Boost"],
 [id="user-settings-cog-Subscriptions"],
