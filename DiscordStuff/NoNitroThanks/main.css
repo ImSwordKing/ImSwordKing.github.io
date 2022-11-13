@@ -89,7 +89,8 @@
 
 /* removes server boost from server menu */
 
-.colorDefault-CDqZdO.colorPremium-vwmYZQ.labelContainer-2vJzYL.item-1OdjEX {display: none}
+.colorDefault-CDqZdO.colorPremium-vwmYZQ.labelContainer-2vJzYL.item-1OdjEX,
+.boostingMenuItemHighlight-udjSBx {display: none}
 
 /* removes the promo stuff for discord nitro */
 
@@ -163,6 +164,11 @@
 .side-2ur1Qk[aria-label="User Settings"] > div:nth-child(n+9):nth-child(-n+13) {
     display: none;
 }
+
+[id="user-settings-cog-Discord_Nitro"],
+[id="user-settings-cog-Nitro_Server_Boost"],
+[id="user-settings-cog-Subscriptions"],
+[id="user-settings-cog-Payment_Flow_Modals"] {display: none}
 
 /* Removing Nitro ads from activities */
 .tierCtaContainer-f-B1mz,
