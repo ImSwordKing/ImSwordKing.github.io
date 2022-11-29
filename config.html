@@ -1,14 +1,15 @@
-<html><head><title>OpenAsar Config</title>
-
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>OpenAsar Config</title>
+<!-- HTML File made by Openasar devs. https://github.com/GooseMod/OpenAsar -->
 <!-- <h2><img src="https://twitter.github.io/twemoji/v/14.0.0/svg/1f44b.svg"> Welcome to OpenAsar, you can configure its features here</h2> -->
 
 </head><body><header>
-  <h1>OpenlAser Config</h1>
+  <h1>OpelAser Config</h1>
   <div id="t_settings" class="active">Settings</div>
   <div id="t_theming">Theming</div>
 </header>
 
-<div id="container"><div><div>Focus<select><option value="performance">Performance</option><option value="battery life">Battery life</option><option value="balanced">Balanced</option></select></div><div>Which aspect of the client to focus on</div></div><div><div>No Track<label class="switch on"><input type="checkbox"><div></div></label></div><div>Disables Discord's added tracking / analytics / telemetry (Sentry, science)</div></div><div><div>Disable Typing<label class="switch on"><input type="checkbox"><div></div></label></div><div>Disables showing other people that you are typing</div></div><div><div>Splash Theming<label class="switch"><input type="checkbox"><div></div></label></div><div>Themes splash screen the same as your client mod's</div></div><div><div><svg width="22" height="22" viewBox="0 0 16 16"><path style="fill: currentColor" fill-rule="evenodd" d="M5 5.782V2.5h-.25a.75.75 0 0 1 0-1.5h6.5a.75.75 0 0 1 0 1.5H11v3.282l3.666 5.76C15.619 13.04 14.543 15 12.767 15H3.233c-1.776 0-2.852-1.96-1.899-3.458L5 5.782zM9.5 2.5h-3V6a.75.75 0 0 1-.117.403L4.73 9h6.54L9.617 6.403A.75.75 0 0 1 9.5 6V2.5zm-6.9 9.847L3.775 10.5h8.45l1.175 1.847a.75.75 0 0 1-.633 1.153H3.233a.75.75 0 0 1-.633-1.153z"></path></svg> Quickstart<label class="switch"><input type="checkbox"><div></div></label></div><div><b>Experimental:</b> Makes Discord start faster by skipping some steps like update checking on start</div></div><div><div><svg width="22" height="22" viewBox="0 0 16 16"><path style="fill: currentColor" fill-rule="evenodd" d="M5 5.782V2.5h-.25a.75.75 0 0 1 0-1.5h6.5a.75.75 0 0 1 0 1.5H11v3.282l3.666 5.76C15.619 13.04 14.543 15 12.767 15H3.233c-1.776 0-2.852-1.96-1.899-3.458L5 5.782zM9.5 2.5h-3V6a.75.75 0 0 1-.117.403L4.73 9h6.54L9.617 6.403A.75.75 0 0 1 9.5 6V2.5zm-6.9 9.847L3.775 10.5h8.45l1.175 1.847a.75.75 0 0 1-.633 1.153H3.233a.75.75 0 0 1-.633-1.153z"></path></svg> Multi Instance<label class="switch"><input type="checkbox"><div></div></label></div><div><b>Experimental:</b> Allows Discord to have multiple instances / windows open at once</div></div></div>
+<div id="container"></div>
 
 <footer>
   <button id="b_restart">Restart</button>
@@ -401,4 +402,83 @@ You need to restart (click the restart button) after changing. */`,
     });
   };
 </script>
-</body></html>
+</body><style id="stylus-8" type="text/css" class="stylus">/* ==UserStyle==
+@name           Unroundeding YouTube
+@namespace      youtube
+@version        1.0.0
+@description    Undo YouTube's new rounded corners
+@author         nobody
+@preprocessor   stylus
+==/UserStyle== */
+
+
+.yt-spec-button-shape-next--size-m {border-radius:0px !important;}
+
+ytd-searchbox[desktop-searchbar-style="rounded_corner_borders_light_btn"] #container.ytd-searchbox, ytd-searchbox[desktop-searchbar-style="rounded_corner_autofocus"] #container.ytd-searchbox {
+    border-radius:1px !important;}
+#search-icon-legacy{border-radius:1px !important;}
+ytd-compact-video-renderer > div:nth-child(1) > ytd-thumbnail:nth-child(1) > a:nth-child(1){border-radius:0px !important;}
+ytd-thumbnail.ytd-compact-radio-renderer > a:nth-child(1){border-radius:0px !important;}
+ytd-multi-page-menu-renderer.style-scope{border-radius:0px !important;}
+ytd-guide-entry-renderer > a:nth-child(1) {border-radius:0px !important;}
+ytd-guide-entry-renderer{border-radius:0px !important;}
+ytd-grid-video-renderer > div:nth-child(1) > ytd-thumbnail:nth-child(1) > a:nth-child(1) {border-radius:0px !important;}
+ytd-thumbnail[size] ytd-thumbnail-overlay-time-status-renderer.ytd-thumbnail, ytd-thumbnail[size] ytd-thumbnail-overlay-button-renderer.ytd-thumbnail {
+  border-radius: 1px !important;
+}
+ytd-badge-supported-renderer > div:nth-child(1) {border-radius:0px !important;}
+ytd-notification-renderer[rounded-thumbnails] .thumbnail-container.ytd-notification-renderer {border-radius:0px !important;}
+#chat{border-radius:0px !important;}
+ytd-live-chat-frame[rounded-container] iframe.ytd-live-chat-frame {border-radius:0px !important;}
+ytd-toggle-button-renderer.ytd-live-chat-frame {border-radius:0px !important;}
+.ytp-offline-slate-bar {border-radius:0px !important;}
+.ytp-offline-slate-button {border-radius:0px !important;}
+yt-live-chat-banner-poll-choice {border-radius:0px !important;}
+html{--yt-button-border-radius: 0px !important;
+--in-content-button-border-radius: 0px !important;}
+#percentage-container.yt-live-chat-banner-poll-choice {border-radius:2px !important;}
+#vote-percentage-bar {border-radius:2px !important;}
+ytd-menu-popup-renderer.style-scope {border-radius:0px !important;}
+ytd-player.ytd-channel-video-player-renderer {border-radius:0px !important;}
+ytd-rich-grid-media > div:nth-child(1) > ytd-thumbnail:nth-child(1) > a:nth-child(1) {border-radius:0px !important;}
+#inline-preview-player {border-radius:0px !important;}
+ytd-video-preview[rounded-container] #video-preview-container.ytd-video-preview, ytd-video-preview[rounded-container] #player-container.ytd-video-preview {border-radius:0px !important;}
+ytd-video-preview[rounded-container] #inline-preview-player.ytd-video-preview {border-radius:0px !important;}
+.ytp-player-minimized.ytp-rounded-miniplayer .html5-main-video, .ytp-player-minimized.ytp-rounded-miniplayer .ytp-miniplayer-scrim, .ytp-player-minimized.ytp-rounded-miniplayer.html5-video-player {border-radius:0px !important;}
+#inline-preview-player > div:nth-child(1) > video:nth-child(1) {border-radius:0px !important;}
+div.ytp-ce-video, .ytp-ce-playlist, .ytp-ce-expanding-overlay-background {border-radius: 0px !important;}
+.ytp-rounded-tooltip .ytp-tooltip-text-wrapper {
+    border-radius: 0px !important;}
+ytd-playlist-panel-renderer > div {border-radius: 0px !important;}
+ytd-playlist-panel-renderer[modern-panels]:not([hide-header-text]) .title.ytd-playlist-panel-renderer {
+    font-family: Roboto !important;
+font-weight: 500;
+font-size: 1.4rem;
+line-height: 2rem;
+max-height: 2rem;
+overflow: hidden;
+display: block;
+-webkit-line-clamp: 1;
+text-overflow: ellipsis;}
+ytd-thumbnail > a {border-radius: 0px !important;}
+.ytp-settings-menu.ytp-rounded-menu, .ytp-screen-mode-menu.ytp-rounded-menu {
+  border-radius: 0px !important;
+}
+ytd-expandable-metadata-renderer[round-container]:not([is-expanded]) {
+  --yt-img-border-radius: 0px !important;
+}
+ytd-expandable-metadata-renderer[round-container] {
+  border-radius: 0px !important;
+}
+.ytp-tooltip-edu{display:none !important;}
+ytd-mini-guide-entry-renderer[guide-refresh] {border-radius: 0px !important;}
+ytd-mini-guide-renderer{border-right: 1px solid var(--redux-spec-10-percent-layer) !important;}
+yt-dropdown-menu[modern-dialogs] #menu.yt-dropdown-menu {
+  border-radius: 0px !important;
+}
+#contentWrapper.tp-yt-iron-dropdown > div {border-radius: 0px !important;}
+yt-button-shape.style-scope:nth-child(3) > button.yt-spec-button-shape-next{margin-bottom: -3px;
+margin-top: 3px;}
+.yt-spec-button-shape-next--size-m.yt-spec-button-shape-next--segmented-start::after {
+  width: 0px !important;
+}</style></html>
