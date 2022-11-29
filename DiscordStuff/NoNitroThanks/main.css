@@ -200,5 +200,19 @@
 .premiumFeatureBorder-3vL7bn, 
 .tryItOutSection-W9qe {display: none}
 
+/* Making it less rely on remove chat buttons */
+
+.button-f2h6uQ[aria-label="Send a gift"]{
+  display: none;
+}
+
+.buttons-uaqb-5 > .button-f2h6uQ > :not(.translateButton-DhP9x8) {
+display: none;
+}
+
+.channel-1Shao0 [href="/store"] {
+    display: none;
+}
+
 
 /* ---> fuck you discord <--- */
