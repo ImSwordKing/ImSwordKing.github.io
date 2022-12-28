@@ -107,6 +107,8 @@
     color: var(--color-muted);
 }
 
+/* The OG code ends here. */
+
 /* remove misc nitro advertisements from the UI */
 
 #account-style-your-profile,
@@ -134,7 +136,7 @@
     display: none;
 }
 
-/* Mostly Profile Customizazion Ads */
+/* Profile Customizazion */
 
 .improvedUpsellSection-camPo1,
 .improvedUpsellContainer-GX81ui { display: none}
@@ -144,7 +146,9 @@
 /* Animated Banner advertisement */
 .upsellVisible-2_CoRC,
 .upsellHidden-2_CoRC,
-.upsell-27kXsw {
+.upsell-27kXsw,
+.bannerHidden-27Sfdl,
+.bannerVisible-27Sfdl {
     display: none;
 }
 
@@ -161,7 +165,7 @@
     display: none;
 }
 
-/* I don't know how the server boost button reappears so i will try removing all the nitro ads on it as possible. i can't seem to get it removed reliably. */
+/* I don't know how the server boost button reappears so i will try removing all the nitro ads on the page itself. if you know how to fix please make a pull request with it. */
 
 .button-f2h6uQ[aria-label="Level 1"], /* Removes Level 1 Button (Also the text as it's connected to the button)*/
 .button-f2h6uQ[aria-label="Level 2"],
@@ -169,10 +173,10 @@
 .subscribeAction-1tjck2,
 .tierMarkerLabelPlusIcon-2zLkr7 {display: none}
 
-/* Removing stuff from the settings context menu */
+/* Removing stuff from settings */
 
 .side-2ur1Qk[aria-label="User Settings"] > div:nth-child(n+9):nth-child(-n+13), /* Removes Nitro, Subscriptions, Nitro Boost pages */
-.side-2ur1Qk[aria-label="User Settings"] > div:nth-child(n+47):nth-child(-n+47), /* Removes Payment Flow from experiments */
+/* .side-2ur1Qk[aria-label="User Settings"] > div:nth-child(n+47):nth-child(-n+47), /* Removes Payment Flow from experiments */ /* Breaks non experiments pane uncomment this part if you want it gone */ 
 [id="user-settings-cog-Discord_Nitro"],
 [id="user-settings-cog-Nitro_Server_Boost"],
 [id="user-settings-cog-Subscriptions"],
@@ -198,7 +202,9 @@
 .upsellContainer-TwfTaF,
 .disabled-1gJPpT,
 .premiumFeatureBorder-3vL7bn, 
-.tryItOutSection-W9qe {display: none}
+.showBorder-2hbqaq.customizationSection-IGy2fS,
+.tryItOutSection-W9qe,
+.tryItOutSection-W9qeGH.featureBorder-2Jl8g4.premiumFeatureBorder-1i95si {display: none}
 
 /* Making it less rely on remove chat buttons */
 
@@ -210,14 +216,18 @@
     display: none;
 }
 
-/* Discord MoneyGiving 2022. "hope your stay at discord is much worse now" -Discord */
+/* Discord Snowsgiving 2022 Stuff (Will get removed when snowsgiving is over.) */
 
 .link-39sEB3 [href="/snowsgiving"] {
     display: none;
 }
 
+.snowsgivingLink-1TZi3c { display: none}
+
 .interactive-iyXY_x [href="/snowsgiving"] {
     display: none;
 }
+
+.buttonWrapper-3YFQGJ { display: none} /* supposed to remove the special gifts button. i don't know if it works. */
 
 /* ---> fuck you discord <--- */
